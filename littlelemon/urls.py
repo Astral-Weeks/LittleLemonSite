@@ -3,7 +3,7 @@ from django.urls import path, include
 from rest_framework import routers
 from restaurant import views
 from rest_framework.authtoken.views import obtain_auth_token
-from .settings import DEBUG
+# from .settings import DEBUG
 # from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 
 router = routers.DefaultRouter()
@@ -22,6 +22,6 @@ urlpatterns = [
 
 # urlpatterns += staticfiles_urlpatterns()
 
-if settings.DEBUG:
-    urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
-    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+# if settings.DEBUG:
+#     urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+#     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
