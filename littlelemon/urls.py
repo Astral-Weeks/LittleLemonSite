@@ -3,7 +3,7 @@ from django.urls import path, include
 from rest_framework import routers
 from restaurant import views
 from rest_framework.authtoken.views import obtain_auth_token
-import .settings
+from .settings import DEBUG
 # from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 
 router = routers.DefaultRouter()
