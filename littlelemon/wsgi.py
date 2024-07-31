@@ -14,8 +14,3 @@ from django.core.wsgi import get_wsgi_application
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'littlelemon.settings')
 
 application = get_wsgi_application()
-
-pip install -r requirements.txt
-
-python manage.py collectstatic --no-input
-python manage.py migrate
